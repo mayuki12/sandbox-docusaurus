@@ -8,7 +8,6 @@ resource "aws_amplify_app" "docusaurus" {
   repository   = "https://github.com/mayuki12/sandbox-docusaurus"
   access_token = local.github_access_token
 
-  # The default build_spec added by the Amplify Console for React.
   build_spec = <<-EOT
         version: 1
         frontend:
